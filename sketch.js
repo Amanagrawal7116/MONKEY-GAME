@@ -21,7 +21,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(800,400);
+  createCanvas(windowWidth,windowHeight);
   
   backgr=createSprite(0,0,800,400);
   backgr.addImage(backImage);
@@ -91,7 +91,7 @@ function draw() {
   stroke("white");
   textSize(20);
   fill("white");
-  text("Score: "+ score, 500,50);
+  text("Score: "+ score, 450,50);
 }
 
 function spawnFood() {
